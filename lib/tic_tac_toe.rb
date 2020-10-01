@@ -107,8 +107,9 @@ class TicTacToe
   end
   
   def draw?
-    if full?
-  end
+    if @board.all? do |index| 
+      index == "X" || index == "O"
+    end
   end
 
     
