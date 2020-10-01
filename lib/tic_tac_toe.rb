@@ -100,6 +100,7 @@ class TicTacToe
     
     def full?
         # What enumberable (other than each, map, or collect) might be helpful here?
+        @board 
     end 
 
 end
