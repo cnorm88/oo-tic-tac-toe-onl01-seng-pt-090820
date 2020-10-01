@@ -113,6 +113,12 @@ class TicTacToe
       return false
     end
   end
+  
+  def over?
+    if @board == won? || @board == full?
+      return true
+    end
+  end
 
     
 
