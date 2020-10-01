@@ -105,10 +105,12 @@ class TicTacToe
       index == "X" || index == "O"
     end
   end
-  
+
   def draw?
-    if @board.all? do |index| 
-      index == "X" || index == "O"
+    if full? && !won?
+      return true
+    else
+      return false
     end
   end
 
