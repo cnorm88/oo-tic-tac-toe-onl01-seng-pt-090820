@@ -101,7 +101,14 @@ class TicTacToe
     
         # What enumberable (other than each, map, or collect) might be helpful here?
   def full?
-    @board.all? {|index| index == "X" || index == "O"}
+    @board.all? do |index| 
+      index == "X" || index == "O"
+    end
+  end
+  
+  def draw?
+    if full?
+  end
   end
 
     
