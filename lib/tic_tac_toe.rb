@@ -98,9 +98,16 @@ class TicTacToe
       end
     end
     
-    def full?
+    
         # What enumberable (other than each, map, or collect) might be helpful here?
-        @board 
-    end 
+  def full?(board)
+    if board.any? do|index| 
+      index == nil || index == " "
+      return false
+    else
+      return true
+    end
+  end 
+    
 
 end
