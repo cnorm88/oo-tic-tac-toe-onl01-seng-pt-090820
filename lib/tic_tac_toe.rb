@@ -103,6 +103,7 @@ class TicTacToe
   def full?(board)
     if board.any? do|index| 
       index == nil || index == " "
+    end
       return false
     else
       return true
