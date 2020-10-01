@@ -101,7 +101,7 @@ class TicTacToe
     
         # What enumberable (other than each, map, or collect) might be helpful here?
 def full?(board)
-  if board.any? {|index| index == nil || index == " "}
+  if board.all? {|index| index == nil || index == " "}
     return false
   else
     return true
